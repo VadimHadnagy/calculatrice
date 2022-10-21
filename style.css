@@ -1,0 +1,126 @@
+body, html{
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/*-------------------------Mode Lumiere--------------------------*/
+button{
+    /*padding: 16px;*/
+    border-radius: 8px;
+    border-color: #008CBA;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    font-size: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover{
+    background-color: #008CBA;
+    color: white;
+}
+
+.red{
+    background-color: red;
+}
+/*-------------------------Mode Sombre--------------------------*/
+.dark{
+    /*padding: 16px;*/
+    border-radius: 8px;
+    border-color: #101722;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    font-size: 50px;
+    background-color: #101722;
+    color: white;
+}
+
+.dark button {
+    color: white;
+    background-color: #0C2C47;
+}
+
+.dark button:hover{
+    background-color: #09263A;
+}
+
+
+
+.container {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "screen-container screen-container screen-container aC"
+      "a7 a8 a9 divide"
+      "a4 a5 a6 multi"
+      "a1 a2 a3 minus"
+      "a0 virgule equal add";
+}
+
+.a7 { grid-area: a7; }
+.a8 { grid-area: a8; }
+.a9 { grid-area: a9; }
+.a4 { grid-area: a4; }
+.a5 { grid-area: a5; }
+.a6 { grid-area: a6; }
+.a1 { grid-area: a1; }
+.a2 { grid-area: a2; }
+.a3 { grid-area: a3; }
+.a0 { grid-area: a0; }
+.divide { grid-area: divide; }
+.multi { grid-area: multi; }
+.minus { grid-area: minus; }
+.add { grid-area: add; }
+.equal { grid-area: equal; }
+.virgule { grid-area: virgule; }
+.screen-container { grid-area: screen-container; }
+.aC { grid-area: aC; }
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.display-box {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    border-radius: 8px;
+    border-color: #008CBA;
+    font-weight: bold;
+    font-size: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: flex;
+    justify-content: space-between;
+}
+
+.screen-container {
+    margin: 4px;
+}
+
+/*.aC{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/
+
+.darbutton  {
+    position: absolute;
+    /*padding: 16px;*/
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    border-color: black;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    font-size: 50px;
+    background-color: #101722;
+    color: white;
+}
